@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itsisaket.csit.fitnessfoods.BMIBMRActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="คำนวณค่าดัชนีมวลกาย"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI-BMR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="62dp"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="74dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif"
+        android:text="น้ำหนัก"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:layout_below="@+id/textView16"
+        android:layout_toStartOf="@+id/textView16"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="59dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="133dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="209dp"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="กิโลกรัม"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignStart="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ส่วนสูง"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="291dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="277dp"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/editText7" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เซนติเมตร"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="291dp"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignEnd="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="อายุ"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="359dp"
+        android:layout_alignBottom="@+id/editText10"
+        android:layout_alignEnd="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="138dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="342dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/editText9"
+        android:layout_toStartOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ปี"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="359dp"
+        android:layout_alignBottom="@+id/editText10"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="คำนวณ"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="446dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>

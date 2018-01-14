@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="E-mail"
+        android:hint="E-mail"
         tools:layout_editor_absoluteY="142dp"
         tools:layout_editor_absoluteX="8dp"
         android:layout_below="@+id/textView2"
@@ -38,11 +38,10 @@
         android:layout_alignStart="@+id/editText2"
         android:layout_below="@+id/editText2"
         android:ems="10"
+        android:hint="Password"
         android:inputType="none"
-        android:text="Password"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="203dp"
-        tools:text="Password" />
+        tools:layout_editor_absoluteY="203dp" />
 
     <Button
         android:id="@+id/btnLogin"
